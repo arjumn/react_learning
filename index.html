@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.js"></script>
+  </head>
+  <body>
+    <div id="here">
+
+    </div>
+    <script type="text/jsx">
+      // Define a 'class'
+      var HelloWorld = React.createClass({
+        render: function(){
+          return <div>
+            Hello World
+          </div>
+        }
+      });
+
+      // Render the class
+      var element = React.createElement(HelloWorld);
+
+      // add the created element to the body
+      React.render(element, document.getElementById("here"));
+    </script>
+  </body>
+</html>
